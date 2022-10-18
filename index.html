@@ -155,11 +155,25 @@ function cache_clear() {
         divserzeugen();
 
             //document.write(text);</script></h1>
-        <iframe autoplay="" loop="" playsinline="" src="https://www.youtube.com/embed/9nBEAipMFq4?autoplay=1&amp;loop=1&amp;start=17&amp;playlist=9nBEAipMFq4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowfullscreen="" __idm_id__="229377"></iframe>
-         <marquee style="color:white;" behavior="scroll" direction="left" scrollamount="10" width="100%">demo</marquee>
+           <h1>Click the button</h1>
+            <button style="color:white;" onclick="myFunction()">Try it</button>
+            <div id="demo">
+                <iframe  frameborder="0"></iframe>
+            </div>
+         <footer>
+            <marquee style="color:white;" behavior="scroll" direction="left" scrollamount="10" width="100%">demo</marquee>
+         </footer>
         <!-- Load external JavaScript -->
         <script src="scripts.js?version = 1.0"></script>
-       
+        <script>
+            function myFunction() {
+              let person = prompt("Please enter your name", "9nBEAipMFq4");
+              if (person != null) {
+                document.getElementById("demo").innerHTML =
+                "<iframe  autoplay loop playsinline type='text/html' src='https://www.youtube.com/embed/"+ person +"?autoplay=1&loop=1&start=17&playlist="+ person +"' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'  frameborder='0' allowfullscreen></iframe>";
+              }
+            }
+            </script>
     </body>
 
 </html>
