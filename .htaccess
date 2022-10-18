@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule "index.html" "index.php"
+
+Options -Indexes
+
+ErrorDocument 404 /test-new/404-error.html 
