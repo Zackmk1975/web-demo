@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    background:black;
+}
+iframe{
+   text-align:center;
+   width: 80%;
+   height: 500px;
+   margin-left: 130px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: normal;
+}

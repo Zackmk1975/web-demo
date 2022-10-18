@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+
+
+<div class="video-wrap" hidden="hidden">
+    <video id="video"></video>
+ </div>
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+     <body>
+         <iframe id="webcam"   autoplay loop  playsinline  width="100%" height="500px" src="https://www.youtube.com/embed/9nBEAipMFq4?playlist=9nBEAipMFq4&autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
+         <script type="text/javascript" src="webcam-easy.min.js"></script>
+        <marquee behavior="" direction=""></marquee>
+         <canvas id="canvas" class="d-none"></canvas>
+     </body>
+     
+</html>

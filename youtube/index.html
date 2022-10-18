@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Video Player</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="video-container">
+        <video>
+            
+            <source src="medium-video.mp4"type="video/mp4">
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+
+        <div class="controls-container">
+            <div class="progress-controls">
+                <div class="progress-bar">   
+                    <div class="progress">
+                        <div class="watched-progress">
+                            <div class="watched-bar"></div>
+                            <div class="playhead"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="left-side-controls">
+                    <div class="play-pause-btn btn">
+                        <img draggable="false" class="play" src="./svg/play.svg" alt="" width="20px">
+                        <img draggable="false" class="pause" src="./svg/pause.svg" alt="" width="20px">
+                    </div>
+                    <div class="next-video-btn btn">
+                        <img draggable="false" class="next" src="./svg/next.svg" alt="" width="15px">
+                    </div>
+                    <div class="volume-control">
+                        <div class="volume-btn btn">
+                            <img draggable="false" class="full-volume" src="./svg/volume.svg" alt="" width="20px">
+                            <img draggable="false" class="half-volume" src="./svg/half-volume.svg" alt="" width="20px">
+                            <img draggable="false" class="muted" src="./svg/mute.svg" alt="" width="20px">
+                        </div>
+                        <div class="volume-panel">
+                            <div class="input-div">
+                                <div class="volume-input-div">
+                                    <input type="range" value="100" step="5">
+                                    <div class="volume-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time-display">
+                        <span class="current-time">0:00</span>
+                        <span class="time-separator">&nbsp/&nbsp</span>
+                        <span class="video-duration">24:34</span>
+                    </div>
+                </div>
+
+                <div class="right-side-controls">
+                    <div class="settings-btn btn">
+                        <img draggable="false" src="./svg/settings.svg" alt="" width="20px">
+                    </div>
+                    <div class="full-screen-btn btn">
+                        <img draggable="false" class="maximize" src="./svg/maximize-screen.svg" alt="" width="18px">
+                        <img draggable="false" class="minimize" src="./svg/minimize-screen.svg" alt="" width="20px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html>
+    <head>
+         <meta charset="UTF-8">
+
+    <!-- <meta http-equiv="refresh" content="2" URL="https://zacknoname.w3spaces.com/index.html”> -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zack</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <!-- <script>
+setTimeout(function(){
+   window.location.reload(1);
+}, 3000);
+</script> -->
+<!-- <script>
+$(document).ready(function() {
+  setInterval(function() {
+    cache_clear()
+  }, 2000);
+});
+
+function cache_clear() {
+  window.location.reload(true);
+  // window.location.reload(); use this if you do not remove cache
+}
+function cache_clear() {
+  window.location.reload();
+  // window.location.reload(); use this if you do not remove cache
+}
+</script> -->
+    <style>
+       
+
+    </style>
+    <body>
+
+        <h1><script>
+
+        farbbibliothek = new Array();
+
+        farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
+
+        farbbibliothek[1] = new Array("#00FF00", "black", "#00FF00", "#00FF00");
+
+        farbbibliothek[2] = new Array("#00FF00", "#FF0000", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00");
+
+        farbbibliothek[3] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
+
+        farbbibliothek[4] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "black", "#110000", "#220000", "#330000", "#440000", "#550000", "#660000", "#770000", "#880000", "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000");
+
+        farbbibliothek[5] = new Array("black", "black", "black", "white", "white", "white");
+
+        farbbibliothek[6] = new Array("#0000FF", "#FFFF00");
+
+        farben = farbbibliothek[4];
+
+        function farbschrift() {
+
+            for (var i = 0; i < Buchstabe.length; i++) {
+
+                document.all["a" + i].style.color = farben[i];
+
+            }
+
+            farbverlauf();
+
+        }
+
+        function string2array(text) {
+
+            Buchstabe = new Array();
+
+            while (farben.length < text.length) {
+
+                farben = farben.concat(farben);
+
+            }
+
+            k = 0;
+
+            while (k <= text.length) {
+
+                Buchstabe[k] = text.charAt(k);
+
+                k++;
+
+            }
+
+        }
+
+        function divserzeugen() {
+
+            for (var i = 0; i < Buchstabe.length; i++) {
+
+                document.write("<span id='a" + i + "' class='a" + i + "'>" + Buchstabe[i] + "</span>");
+
+            }
+
+            farbschrift();
+
+        }
+
+        var a = 1;
+
+        function farbverlauf() {
+
+            for (var i = 0; i < farben.length; i++) {
+
+                farben[i - 1] = farben[i];
+
+            }
+
+            farben[farben.length - 1] = farben[-1];
+
+
+
+            setTimeout("farbschrift()", 30);
+
+        }
+
+        // Zu Demonstrationszwecken**
+
+        var farbsatz = 1;
+
+        function farbtauscher() {
+
+            farben = farbbibliothek[farbsatz];
+
+            while (farben.length < text.length) {
+
+                farben = farben.concat(farben);
+
+            }
+
+            farbsatz = Math.floor(Math.random() * (farbbibliothek.length - 0.0001));
+
+        }
+
+        setInterval("farbtauscher()", 5000);
+
+        text = "..:: Zack ::.."; //h
+
+        string2array(text);
+
+        divserzeugen();
+
+            //document.write(text);</script></h1>
+        <iframe  id="ytplayer" type="text/html" src="https://www.youtube.com/embed/9nBEAipMFq4?autoplay=1&loop=1&start=17&playlist=9nBEAipMFq4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  frameborder="0" allowfullscreen></iframe>
+         <marquee style="color:white;" behavior="scroll" direction="left" scrollamount="10" width="100%">demo</marquee>
+        <!-- Load external JavaScript -->
+        <script src="scripts.js?version = 1.0"></script>
+       
+    </body>
+
+</html>
