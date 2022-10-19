@@ -15,12 +15,18 @@
 </style>
 <body>
     <div class="video-container">
-        <video>
+        <video id="homevideo" onended="run()"  >
             
-            <source src="medium-video.mp4"type="video/mp4">
-            <source src="vid.mp4" type="video/mp4">
+            <source   src="video1.mp4" type="video/mp4">
+            
         </video>
-
+        <img src="" alt="" class="thumbnail-img">
+        <div class="timeline-container">
+            <div class="timeline">
+                <img src="" alt="" class="preview-img">
+                <div class="thumb-indicator"></div>
+            </div>
+        </div>
         <div class="controls-container">
             <div class="progress-controls">
                 <div class="progress-bar">   
@@ -38,7 +44,7 @@
                         <img draggable="false" class="play" src="./svg/play.svg" alt="" width="20px">
                         <img draggable="false" class="pause" src="./svg/pause.svg" alt="" width="20px">
                     </div>
-                    <div class="next-video-btn btn">
+                    <div class="next-video-btn btn"  id="nextButton">
                         <img draggable="false" class="next" src="./svg/next.svg" alt="" width="15px">
                     </div>
                     <div class="volume-control">
@@ -64,6 +70,9 @@
                 </div>
 
                 <div class="right-side-controls">
+                    <button  class="speed-btn wide-btn">
+                        1x
+                    </button>
                     <div class="settings-btn btn">
                         <img draggable="false" src="./svg/settings.svg" alt="" width="20px">
                     </div>
