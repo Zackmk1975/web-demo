@@ -1,0 +1,84 @@
+<!-- Designed by:  Mauricio Bucardo
+Original image: https://dribbble.com/shots/6957353-Music-Player-Widget -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/305568023_424543156444096_5694923205938661700_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=lh4SCrE8eBoAX9MHep0&_nc_ht=scontent.fsgn2-7.fna&oh=00_AT8EIx2c6P4K0DZxa6LbPQc8JtV-75udyq-Y5Lv0MdWFWg&oe=634FC737"/>
+    <title>Zack</title>
+</head>
+<body>
+    <div id="app-cover" class="AppCover" data-volume-level="high">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer" >
+          <div class="level-volum" >
+            <div class="volume-container">
+              <button class="mute-btn">
+                <img draggable="false"  class="full-volume" src="./svg/volume.svg" alt="" width="20px">
+                <img draggable="false"  class="half-volume" src="./svg/half-volume.svg" alt="" width="20px">
+                <img draggable="false"  class="muted " src="./svg/mute.svg" alt="" width="20px" >
+              </button>
+              <input class="volume-slider" type="range"  value="100" step="1" min="0" max="100">
+            </div>
+          </div>
+        </div>
+        <div id="player" class="player"  >
+          <div id="player-track">
+            <div id="album-name"></div>
+            <div id="track-name"></div>
+      
+            <div id="track-time">
+              <div id="current-time"></div>
+              <div id="track-length"></div>
+            </div>
+            <div id="s-area">
+              <div id="ins-time"></div>
+              <div id="s-hover"></div>
+              <div id="seek-bar"></div>
+            </div>
+          </div>
+          <div id="player-content">
+            <div id="album-art">
+              <img src="https://raw.githubusercontent.com/Zackmk1975/music/master/img/_1.jpg" class="active" id="_1">
+              <img src="https://raw.githubusercontent.com/Zackmk1975/music/master/img/_2.jpg" id="_2">
+              <img src="https://raw.githubusercontent.com/Zackmk1975/music/master/img/_3.jpg" id="_3">
+              <img src="https://raw.githubusercontent.com/Zackmk1975/music/master/img/_4.jpg" id="_4">
+              <img src="https://raw.githubusercontent.com/Zackmk1975/music/master/img/_5.jpg" id="_5">
+              <img src="https://raw.githubusercontent.com/Zackmk1975/music/master/img/_6.jpg" id="_6">
+              <div id="buffer-box">Buffering ...</div>
+            </div>
+            <div id="player-controls">
+              <div class="control">
+                <div class="button" id="play-previous">
+                  <i class="fas fa-backward"></i>
+                </div>
+              </div>
+              <div class="control">
+                <div class="button" id="play-pause-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="control">
+                <div class="button" id="play-next">
+                  <i class="fas fa-forward"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <script src="script.js"></script>
+      <script src="vol.js"></script>
+      
+</body>
+
+</html>
