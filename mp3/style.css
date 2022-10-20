@@ -219,3 +219,21 @@ h2{
   background-color: white;
   color:black
 }
+
+
+
+i.fas.fa-step-backward {
+    cursor: pointer;
+}
+i.fas.fa-redo {
+    cursor: pointer;
+}
+.btn.btn-toggle-play {
+    cursor: pointer;
+}
+i.fas.fa-step-forward {
+    cursor: pointer;
+}
+i.fas.fa-random {
+    cursor: pointer;
+}
