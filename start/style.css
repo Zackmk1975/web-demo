@@ -132,8 +132,8 @@ body {
     }
   h1{ font-family: 'OCR A'; text-align: center; letter-spacing: 15px; font-size: 100%;}
   hr { width: 48%;}
-  @media screen and (min-width:500px) and (max-width:750px){
-    div#title {
+  @media screen and (min-width:780px) and (max-width:750px){
+    #title {
     font-size: 200%;
     }
   div.glitch {
