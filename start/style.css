@@ -135,7 +135,7 @@ body {
   @media screen and (max-width: 767px){
   hr { width: 38%;}
      #title {
-    font-size: 150%;
+    font-size: 100%;
     }
   .glitch {
 
