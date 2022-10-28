@@ -132,17 +132,14 @@ body {
     }
   h1{ font-family: 'OCR A'; text-align: center; letter-spacing: 15px; font-size: 100%;}
   hr { width: 48%;}
-@media screen and (max-width:711px){
+  @media screen and (min-width:500px) and (max-width:750px){
     div#title {
-
-      font-size: 230%;
-  }
+    font-size: 230%;
+    }
   div.glitch {
 
     width: 365px;
-
-}
-    
+  } 
   }
   #title{
     margin-top: 3%;
