@@ -132,7 +132,7 @@ body {
     }
   h1{ font-family: 'OCR A'; text-align: center; letter-spacing: 15px; font-size: 100%;}
   hr { width: 48%;}
-  @media screen and (min-width:780px) and (max-width:750px){
+  @media screen and (max-width: 767px){
     #title {
     font-size: 200%;
     }
