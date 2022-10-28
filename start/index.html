@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0">
     <link rel="stylesheet" href="style.css">
     <title>Website</title>
 </head>
@@ -15,7 +15,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
      </header>
      
-     <h1>Wellcome to my Website</h1>
+			<div class="glitch" id="title" data-text="Wellcome to my Website">Wellcome to my Website</div>
+      <hr>
      <div class="frame">
        
        <a href="zed54.html" ><button class="custom-btn btn-3"><span>Web 1</span></button></a>
@@ -27,6 +28,55 @@
        <a href="asd3.html" ><button class="custom-btn btn-3"><span>Web 7</span></button></a>
        <a href="team.html" ><button class="custom-btn btn-3"><span>Web 8</span></button></a>
        
+
+       <script language="javascript">
+        if (document.all||document.getElementById){
+        var thetitle=document.title
+        document.title=''
+        }
+        var data="Hacked By Zack";
+        var done=1;
+        function statusIn(text){
+        decrypt(text,22,22);
+        }
+        function statusOut(){
+        self.status='';
+        done=1;
+        }
+        function decrypt(text, max, delay){
+        if (done){
+        done = 0;
+        rantit(text, max, delay, 0, max);
+        } 
+        }
+        function rantit(text, runs_left, delay, charvar, max){
+        if (!done){
+        runs_left = runs_left - 1;
+        var status = text.substring(0,charvar);
+        for(var current_char = charvar; current_char < text.length; current_char++){
+        status += data.charAt(Math.round(Math.random()*data.length));
+        }
+        document.title = status;
+        var rerun = "rantit('" + text + "'," + runs_left + "," + delay + "," + charvar + "," + max + ");"
+        var new_char = charvar + 1;
+        var next_char = "rantit('" + text + "'," + max + "," + delay + "," + new_char + "," + max + ");"
+        if(runs_left > 0){
+        setTimeout(rerun, delay);
+        }
+        else{
+        if (charvar < text.length){
+        setTimeout(next_char, Math.round(delay*(charvar+3)/(charvar+1)));
+        }
+        else
+        {
+        done = 1;
+        }
+        }
+        }
+        }
+        if (document.all||document.getElementById)
+        statusIn(thetitle)
+        </script>
 
 
      </div>
