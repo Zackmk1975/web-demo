@@ -146,7 +146,7 @@ body {
   }
   #title{
     margin-top: 3%;
-    font-size: 400%;
+    font-size: 350%;
   }
   .team, p1{
     text-align: center;
@@ -156,7 +156,7 @@ body {
       color: rgb(255, 0, 0);
       font-size: 100px;
       position: relative;
-      width: 713px;
+      width: 560px;
       margin: 0 auto;
     }
 
