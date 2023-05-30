@@ -36,7 +36,12 @@ h1 {
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: normal;
 }
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Đặt chiều cao của container bằng chiều cao của màn hình */
+}
 .btn-choose{
     text-align: center; background-color: red;
             border: none;
@@ -192,7 +197,9 @@ function cache_clear() {
 
             //document.write(text);</script></h1>
             <h1 style="color:white;">Click the button to change video</h1>
+        <div class="container">
             <button class="btn-choose" onclick="myFunction()">Click here</button>
+        </div>
             <div id="demo">
                 <iframe  frameborder="0"></iframe>
             </div>
