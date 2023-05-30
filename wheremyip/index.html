@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Địa chỉ IP</title>
+</head>
+<body>
+  <h1>Địa chỉ IP: <span id="ipAddress"></span></h1>
+<h1>Vị trí: <span id="location"></span></h1>
+
+
+  <script>
+    fetch('https://api.ipify.org/?format=json')
+      .then(response => response.json())
+      .then(data => {
+        const ipAddress = data.ip;
+        document.getElementById('ipAddress').textContent = ipAddress;
+
+	 const country = data.country_name;
+        const city = data.city;
+        const location = `${country}, ${city}`;
+        document.getElementById('location').textContent = location;
+      })
+      .catch(error => {
+        console.log('Lỗi khi lấy địa chỉ IP:', error);
+      });
+  </script>
+</body>
+</html>
