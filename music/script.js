@@ -30,6 +30,7 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
+      "Để ai cần - Bray & Young H",
       "Dawn",
       "Waiting For You",
       "Electro Boy",
@@ -45,14 +46,15 @@ $(function () {
       "Martin Garrix - Proxy",
       "Hibiki Du Ca Cover ft. Hori"
     ],
-    albumArtworks = ["_1", "_2", "_3", "_4", "_5","_6"],
+    albumArtworks = ["_1", "_2", "_3", "_4", "_5","_6","_7"],
     trackUrl = [
-      "https://raw.githubusercontent.com/Zackmk1975/music/master/music/2.mp3",
       "https://raw.githubusercontent.com/Zackmk1975/music/master/music/1.mp3",
+      "https://raw.githubusercontent.com/Zackmk1975/music/master/music/2.mp3",
       "https://raw.githubusercontent.com/Zackmk1975/music/master/music/3.mp3",
       "https://raw.githubusercontent.com/Zackmk1975/music/master/music/4.mp3",
       "https://raw.githubusercontent.com/Zackmk1975/music/master/music/5.mp3",
-      "https://raw.githubusercontent.com/Zackmk1975/music/master/music/6.mp3"
+      "https://raw.githubusercontent.com/Zackmk1975/music/master/music/6.mp3",
+      "https://raw.githubusercontent.com/Zackmk1975/music/master/music/7.mp3"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
