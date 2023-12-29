@@ -30,21 +30,22 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "Để ai cần - Bray & Young H",
+      "Để Ai Cần (Single)",
       "Dawn",
-      "Waiting For You",
       "Electro Boy",
       "Home",
       "Proxy (Original Mix)",
-      "DỄ ĐẾN DỄ ĐI"
+      "DỄ ĐẾN DỄ ĐI",
+      "Waiting For You",
     ],
     trackNames = [
+      "B Ray, Young H",
       "Skylike - Dawn",
-      "MONO - Waiting For You",
       "Kaaze - Electro Boy",
       "Jordan Schor - Home",
       "Martin Garrix - Proxy",
-      "Hibiki Du Ca Cover ft. Hori"
+      "Hibiki Du Ca Cover ft. Hori",
+      "MONO - Waiting For You",
     ],
     albumArtworks = ["_1", "_2", "_3", "_4", "_5","_6","_7"],
     trackUrl = [
